@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+header div.top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
  
 body {
     font-family: 'Roboto', sans-serif;
@@ -12,17 +18,19 @@ header {
     background-color: #EAC926;
 }
 
-header form {
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
-}
 
- header input {
+header form {
+    padding: 10px;
+    font-size: 11px;
     outline: none;
     border: none;
-    text-overflow: ;
+}
+
+ header div.searchBar form {
+    display: flex;
+    padding: 2%;
+    justify-content: end;
+    align-items: start;
  }
 
 
@@ -41,9 +49,10 @@ header div.burguer-menu {
     display: flex;
     justify-content: center;
     background-color: rgb(69, 69, 249);
+    font-size: large;
     margin-top: 2%;
-    margin-left: 40%;
-    margin-right: 40%;
-    border-radius: 5%;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-radius: 10%;
     padding: 3%;
 }
