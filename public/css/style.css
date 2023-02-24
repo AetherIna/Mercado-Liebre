@@ -2,12 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
-header div.top-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
  
 body {
     font-family: 'Roboto', sans-serif;
@@ -18,22 +12,40 @@ header {
     background-color: #EAC926;
 }
 
-
-header form {
-    padding: 10px;
-    font-size: 11px;
-    outline: none;
-    border: none;
+header div.logo {
+    display: flex;
+    justify-content: start;
 }
 
- header div.searchBar form {
+
+header form {
     display: flex;
-    padding: 2%;
     justify-content: end;
-    align-items: start;
- }
+    align-content: start;
+    padding: 10px;
+    font-size: 11px;
+}
 
+header form input {
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    color: #666;
+    padding: 3%;
+    width: 50%;
+    font-size: 1.3em;
+    border-radius: 10px 0 0 10px;
+}
 
+header form button {
+    background-color: #FFF;
+    border: none;
+    color: #666;
+    width: 10%;
+    padding: 3.1%;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
 
 /* header div.button {
     display: flex;
@@ -41,18 +53,31 @@ header form {
     margin-right: 20px;
 } */
 
-header nav div.UI {
+header nav div.User-menu {
     display: none;
 }
 
 header div.burguer-menu {
     display: flex;
     justify-content: center;
-    background-color: rgb(69, 69, 249);
+    background-color: #03264C;;
+    color: #ebebeb;
     font-size: large;
-    margin-top: 2%;
+    border-radius: 10%;
     margin-left: 45%;
     margin-right: 45%;
-    border-radius: 10%;
     padding: 3%;
+}
+
+header div.top-header {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    font-size: 12px;
 }
